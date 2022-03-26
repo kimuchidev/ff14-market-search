@@ -1,0 +1,16 @@
+{
+    "name": "ff14market",
+    "version": "1.0.0",
+    "description": "tool for searching sth can tenbai",
+    "main": "index.mjs",
+    "scripts": {
+        "start": "node index.mjs",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "koko_hec",
+    "license": "ISC",
+    "dependencies": {
+        "got": "^12.0.2",
+        "lowdb": "^3.0.0"
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ffxiv Market Search</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="app">
+        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidt">
+            <thead>
+                <tr>
+                    <td colspan="6">聖鯖履歴</td>
+                    <td colspan="3">最安情報</td>
+                </tr>
+                <tr>
+                    <td>itemId</td>
+                    <td>name</td>
+                    <td>avgSoldPrice</td>
+                    <td>soldTimes</td>
+                    <td>soldQuantity</td>
+                    <td>soldAmount</td>
+                    <td>worldName</td>
+                    <td>pricePerUnit</td>
+                    <td>quantity</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="item in tableData">
+                    <td>{{ item.itemId }}</td>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.avgSoldPrice }}</td>
+                    <td>{{ item.soldTimes }}</td>
+                    <td>{{ item.soldQuantity }}</td>
+                    <td>{{ item.soldAmount }}</td>
+                    <td>{{item.CheapestPrice.worldName}}</td>
+                    <td>{{item.CheapestPrice.pricePerUnit}}</td>
+                    <td>{{item.CheapestPrice.quantity}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
