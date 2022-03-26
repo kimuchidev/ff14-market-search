@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "tool for searching sth can tenbai",
     "main": "index.mjs",
+    "engines": { "node": "16.x" },
     "scripts": {
         "start": "node index.mjs",
         "test": "echo \"Error: no test specified\" && exit 1"
