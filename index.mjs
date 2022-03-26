@@ -29,6 +29,10 @@ const server = http.createServer((req, res) => {
     if (req.url == '/market') {
         res.writeHead(200, { 'Content-Type': 'text/plain; charset=UTF-8' });
         res.end(JSON.stringify(db.data.searchedResult));
+    } else if (req.url == '/start') {
+        startSearch();
+        res.writeHead(200, { 'Content-Type': 'text/plain; charset=UTF-8' });
+        res.end("Searching...");
     } else {
         res.writeHead(200, { 'Content-Type': 'text/html' });
         res.write(indexHtml);
@@ -47,32 +51,35 @@ server.listen(port, hostname, () => {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 import got from 'got';
+async function startSearch() {
 
-db.data = db.data || { searchedItemId: -1, searchedResult: [], searchingResult: [] };
+    db.data = db.data || { searchedItemId: -1, searchedResult: [], searchingResult: [] };
 
-let marketableItemsId = await got('https://universalis.app/api/marketable').json();
+    let marketableItemsId = await got('https://universalis.app/api/marketable').json();
 
-for (const index in marketableItemsId) {
-    if (marketableItemsId[index] == db.data.searchedItemId && index != marketableItemsId.length) {
-        marketableItemsId = marketableItemsId.slice(index);
-        break;
+    for (const index in marketableItemsId) {
+        if (marketableItemsId[index] == db.data.searchedItemId && index != marketableItemsId.length) {
+            marketableItemsId = marketableItemsId.slice(index);
+            break;
+        }
     }
+
+    for (const index in marketableItemsId) {
+        await searchItem(marketableItemsId[index]);
+    }
+
+    db.data.searchedResult = db.data.searchingResult;
+    db.data.searchingResult = [];
+    db.data.searchedItemId = -1;
+
+    await db.write();
+    console.log("Loop Over");
 }
-
-for (const index in marketableItemsId) {
-    await searchItem(marketableItemsId[index]);
-}
-
-db.data.searchedResult = db.data.searchingResult;
-db.data.searchingResult = [];
-db.data.searchedItemId = -1;
-
-await db.write();
-console.log("Loop Over");
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 async function searchItem(itemId) {
+    console.log("Searching:" + itemId);
     db.data.searchedItemId = itemId;
 
     const recentHistories = await got('https://universalis.app/api/v2/history/' + 'Alexander' + '/' + itemId, {
