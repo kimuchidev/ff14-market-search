@@ -25,6 +25,8 @@ const before24h = new Date().getTime() / 1000 - 86400;
 const showJs = fs.readFileSync('show.js');
 const indexHtml = fs.readFileSync('index.html');
 
+let searchStarted = false;
+
 const server = http.createServer((req, res) => {
     if (req.url == '/market') {
         res.writeHead(200, { 'Content-Type': 'text/plain; charset=UTF-8' });
@@ -55,6 +57,11 @@ server.listen(port, hostname, () => {
 
 import got from 'got';
 async function startSearch() {
+    if (searchStarted) {
+        return;
+    }
+
+    searchStarted = true;
 
     db.data = db.data || { searchedTime: null, searchedItemId: -1, searchedResult: [], searchingResult: [] };
 
@@ -77,6 +84,9 @@ async function startSearch() {
     db.data.searchedTime = now();
 
     await db.write();
+
+    searchStarted = false;
+
     console.log("Loop Over");
 }
 

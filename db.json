@@ -1,6 +1,72 @@
 {
-    "searchedTime": "2022-03-26 14:09",
-    "searchedItemId": -1,
-    "searchedResult": [],
-    "searchingResult": []
+  "searchedTime": "2022-03-26 14:09",
+  "searchedItemId": 2078,
+  "searchedResult": [],
+  "searchingResult": [
+    {
+      "itemId": 8,
+      "name": "ファイアクリスタル",
+      "avgSoldPrice": 19,
+      "soldTimes": 26,
+      "soldQuantity": 102964,
+      "soldAmount": 1941493,
+      "CheapestPrice": {
+        "worldName": "Yojimbo",
+        "pricePerUnit": 19,
+        "quantity": 3717
+      }
+    },
+    {
+      "itemId": 12,
+      "name": "ライトニングクリスタル",
+      "avgSoldPrice": 12,
+      "soldTimes": 17,
+      "soldQuantity": 54195,
+      "soldAmount": 668061,
+      "CheapestPrice": {
+        "worldName": "Yojimbo",
+        "pricePerUnit": 11,
+        "quantity": 5421
+      }
+    },
+    {
+      "itemId": 12,
+      "name": "ライトニングクリスタル",
+      "avgSoldPrice": 12,
+      "soldTimes": 17,
+      "soldQuantity": 54195,
+      "soldAmount": 668061,
+      "CheapestPrice": {
+        "worldName": "Yojimbo",
+        "pricePerUnit": 11,
+        "quantity": 5421
+      }
+    },
+    {
+      "itemId": 13,
+      "name": "ウォータークリスタル",
+      "avgSoldPrice": 24,
+      "soldTimes": 25,
+      "soldQuantity": 44565,
+      "soldAmount": 1050507,
+      "CheapestPrice": {
+        "worldName": "Alexander",
+        "pricePerUnit": 20,
+        "quantity": 3000
+      }
+    },
+    {
+      "itemId": 13,
+      "name": "ウォータークリスタル",
+      "avgSoldPrice": 24,
+      "soldTimes": 25,
+      "soldQuantity": 44565,
+      "soldAmount": 1050507,
+      "CheapestPrice": {
+        "worldName": "Alexander",
+        "pricePerUnit": 20,
+        "quantity": 3000
+      }
+    }
+  ]
 }
