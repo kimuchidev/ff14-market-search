@@ -29,6 +29,9 @@ const server = http.createServer((req, res) => {
     if (req.url == '/market') {
         res.writeHead(200, { 'Content-Type': 'text/plain; charset=UTF-8' });
         res.end(JSON.stringify(db.data.searchedResult));
+    } else if (req.url == '/time') {
+        res.writeHead(200, { 'Content-Type': 'text/plain; charset=UTF-8' });
+        res.end(db.data.searchedTime);
     } else if (req.url == '/start') {
         startSearch();
         res.writeHead(200, { 'Content-Type': 'text/plain; charset=UTF-8' });
@@ -53,7 +56,7 @@ server.listen(port, hostname, () => {
 import got from 'got';
 async function startSearch() {
 
-    db.data = db.data || { searchedItemId: -1, searchedResult: [], searchingResult: [] };
+    db.data = db.data || { searchedTime: null, searchedItemId: -1, searchedResult: [], searchingResult: [] };
 
     let marketableItemsId = await got('https://universalis.app/api/marketable').json();
 
@@ -71,9 +74,29 @@ async function startSearch() {
     db.data.searchedResult = db.data.searchingResult;
     db.data.searchingResult = [];
     db.data.searchedItemId = -1;
+    db.data.searchedTime = now();
 
     await db.write();
     console.log("Loop Over");
+}
+
+function now() {
+    return formatDate(new Date(Date.now() + ((new Date().getTimezoneOffset() + (9 * 60)) * 60 * 1000)));
+}
+
+function formatDate(date) {
+    if (typeof date == "string") {
+        return date;
+    }
+
+    var yyyyy = date.getFullYear();
+    var MM = ("00" + (date.getMonth() + 1)).slice(-2);
+    var dd = ("00" + date.getDate()).slice(-2);
+    var hh = ("00" + date.getHours()).slice(-2);
+    var mm = ("00" + date.getMinutes()).slice(-2);
+
+    var result = yyyyy + "-" + MM + "-" + dd + " " + hh + ":" + mm;
+    return result;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
