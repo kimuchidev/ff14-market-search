@@ -35,9 +35,13 @@ const server = http.createServer((req, res) => {
         res.writeHead(200, { 'Content-Type': 'text/plain; charset=UTF-8' });
         res.end(db.data.searchedTime);
     } else if (req.url == '/start') {
-        startSearch();
         res.writeHead(200, { 'Content-Type': 'text/plain; charset=UTF-8' });
-        res.end("Searching...");
+        if (isNearlyTime(db.data.searchedTime, now())) {
+            res.end("Search Over.");
+        } else {
+            startSearch();
+            res.end("Searching..." + db.data.searchedItemId);
+        }
     } else {
         res.writeHead(200, { 'Content-Type': 'text/html' });
         res.write(indexHtml);
@@ -107,6 +111,12 @@ function formatDate(date) {
 
     var result = yyyyy + "-" + MM + "-" + dd + " " + hh + ":" + mm;
     return result;
+}
+
+function isNearlyTime(a, b) {
+    const aHour = a.substring(11, 13);
+    const bHour = b.substring(11, 13);
+    return aHour == bHour;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
