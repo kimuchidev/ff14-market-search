@@ -133,28 +133,28 @@ async function searchItem(itemId) {
 
     let salesIn24h = recentHistories.entries.filter(history => history.timestamp > before24h);
 
-    if (salesIn24h.length >= 10) {
-        let onlyHq = false;
-        const salesHq = salesIn24h.filter(sale => sale.hq == true);
-        const salesNq = salesIn24h.filter(sale => sale.hq == false);
-        if (salesHq.length / salesNq.length > 2) {
-            onlyHq = true;
-            salesIn24h = salesHq;
-        }
+    let onlyHq = false;
+    const salesHq = salesIn24h.filter(sale => sale.hq == true);
+    const salesNq = salesIn24h.filter(sale => sale.hq == false);
+    if (salesHq.length / salesNq.length > 2) {
+        onlyHq = true;
+        salesIn24h = salesHq;
+    }
 
+    let soldAmount = 0;
+    let soldQuantity = 0;
+    salesIn24h.forEach(sales => {
+        soldQuantity = soldQuantity + sales.quantity;
+        soldAmount = soldAmount + sales.quantity * sales.pricePerUnit;
+    });
+    let avgSoldPrice = Math.round(soldAmount / soldQuantity);
+    let soldTimes = salesIn24h.length;
+    if (soldTimes == 50) {
+        soldTimes = soldTimes + "以上";
+    }
+
+    if (salesIn24h.length >= 10 || avgSoldPrice > 100000) {
         const jpName = await searchJpName(itemId);
-        let soldAmount = 0;
-        let soldQuantity = 0;
-        salesIn24h.forEach(sales => {
-            soldQuantity = soldQuantity + sales.quantity;
-            soldAmount = soldAmount + sales.quantity * sales.pricePerUnit;
-        });
-        let avgSoldPrice = Math.round(soldAmount / soldQuantity);
-        let soldTimes = salesIn24h.length;
-        if (soldTimes == 50) {
-            soldTimes = soldTimes + "以上";
-        }
-
         const bordInfo = await searchCheapestPrice(itemId, onlyHq);
 
         db.data.searchingResult.push({
