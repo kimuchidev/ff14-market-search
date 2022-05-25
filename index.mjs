@@ -34,6 +34,9 @@ const server = http.createServer((req, res) => {
     } else if (req.url == '/time') {
         res.writeHead(200, { 'Content-Type': 'text/plain; charset=UTF-8' });
         res.end(db.data.searchedTime);
+    } else if (req.url == '/crystal') {
+        res.writeHead(200, { 'Content-Type': 'text/plain; charset=UTF-8' });
+        res.end(JSON.stringify(db.data.searchCrystal));
     } else if (req.url == '/start') {
         res.writeHead(200, { 'Content-Type': 'text/plain; charset=UTF-8' });
         if (isNearlyTime(db.data.searchedTime, now())) {
@@ -92,6 +95,8 @@ async function startSearch() {
     searchStarted = false;
 
     console.log("Loop Over");
+
+    await searchCrystal();
 }
 
 function now() {
@@ -189,4 +194,79 @@ async function searchCheapestPrice(itemId, onlyHq) {
     }).json();
     const bordInfo = onlyHq ? itemResponse.listings.filter(list => list.hq == true)[0] : itemResponse.listings[0];
     return bordInfo != undefined ? bordInfo : { worldName: "", pricePerUnit: -1, quantity: -1 };
+}
+
+/////////////////////////////////////////////////////////////////////////
+///////////////////// クリスタル転売用 ///////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+async function searchCrystal() {
+    db.data.searchCrystal = {};
+
+    let searchItems = [];
+    searchItems[2] = "2 ファイアシャード";
+    searchItems[3] = "3 アイスシャード";
+    searchItems[4] = "4 ウィンドシャード";
+    searchItems[5] = "5 アースシャード";
+    searchItems[6] = "6 ライトニングシャード";
+    searchItems[7] = "7 ウォーターシャード";
+    searchItems[8] = "8 ファイアクリスタル";
+    searchItems[9] = "9 アイスクリスタル";
+    searchItems[10] = "10 ウィンドクリスタル";
+    searchItems[11] = "11 アースクリスタル";
+    searchItems[12] = "12 ライトニングクリスタル";
+    searchItems[13] = "13 ウォータークリスタル";
+    searchItems[14] = "14 ファイアクラスター";
+    searchItems[15] = "15 アイスクラスター";
+    searchItems[16] = "16 ウィンドクラスター";
+    searchItems[17] = "17 アースクラスター";
+    searchItems[18] = "18 ライトニングクラスター";
+    searchItems[19] = "19 ウォータークラスター";
+
+    for (const key in searchItems) {
+        db.data.searchCrystal[key] = await searchPricePerWorld(key);
+    }
+    await db.write();
+}
+
+async function searchPricePerWorld(itemId) {
+    // 平均単価計算時使用するアイテム数
+    let limitCount = itemId < 20 ? 9999 : 3;
+
+    let itemResponse = await got('https://universalis.app/api/v2/' + 'Gaia' + '/' + itemId, {
+        searchParams: {
+            entries: 0,
+            hq: "nq"
+        }
+    }).json();
+
+    let results = {
+        worlds: [],
+        pricePerWorld: {}
+    };
+
+    // 単価昇順で並び替え
+    itemResponse.listings.sort(function (a, b) {
+        return a.pricePerUnit - b.pricePerUnit;
+    });
+
+    // ワールド別に最安 9999 個の単価を集計
+    itemResponse.listings.forEach(listing => {
+        if (results.pricePerWorld[listing.worldID] == null) {
+            results.worlds.push(listing.worldID);
+            results.pricePerWorld[listing.worldID] = {
+                "worldName": listing.worldName,
+                "pricePerUnit": listing.pricePerUnit,
+                "quantity": listing.quantity,
+                "sum": listing.pricePerUnit * listing.quantity,
+            }
+        } else {
+            if (results.pricePerWorld[listing.worldID].quantity < limitCount) {
+                results.pricePerWorld[listing.worldID].quantity = results.pricePerWorld[listing.worldID].quantity + listing.quantity;
+                results.pricePerWorld[listing.worldID].sum = results.pricePerWorld[listing.worldID].sum + listing.pricePerUnit * listing.quantity;
+                results.pricePerWorld[listing.worldID].pricePerUnit = results.pricePerWorld[listing.worldID].sum / results.pricePerWorld[listing.worldID].quantity;
+            }
+        }
+    });
+
+    return results;
 }

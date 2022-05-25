@@ -1,6 +1,6 @@
 {
   "searchedTime": "2022-03-26 14:09",
-  "searchedItemId": 2078,
+  "searchedItemId": 2335,
   "searchedResult": [],
   "searchingResult": [
     {
@@ -68,5 +68,1501 @@
         "quantity": 3000
       }
     }
-  ]
+  ],
+  "searchCrystal": {
+    "2": {
+      "worlds": [
+        52,
+        92,
+        32,
+        51,
+        59,
+        69,
+        43,
+        31,
+        76,
+        46,
+        98
+      ],
+      "pricePerWorld": {
+        "31": {
+          "worldName": "Yojimbo",
+          "pricePerUnit": 35.30061349693251,
+          "quantity": 13040,
+          "sum": 460320
+        },
+        "32": {
+          "worldName": "Zeromus",
+          "pricePerUnit": 31,
+          "quantity": 12580,
+          "sum": 389980
+        },
+        "43": {
+          "worldName": "Alexander",
+          "pricePerUnit": 33,
+          "quantity": 11200,
+          "sum": 369600
+        },
+        "46": {
+          "worldName": "Fenrir",
+          "pricePerUnit": 40,
+          "quantity": 19460,
+          "sum": 778400
+        },
+        "51": {
+          "worldName": "Ultima",
+          "pricePerUnit": 31.36111111111111,
+          "quantity": 10080,
+          "sum": 316120
+        },
+        "52": {
+          "worldName": "Valefor",
+          "pricePerUnit": 25,
+          "quantity": 9999,
+          "sum": 249975
+        },
+        "59": {
+          "worldName": "Ifrit",
+          "pricePerUnit": 31.732876712328768,
+          "quantity": 11680,
+          "sum": 370640
+        },
+        "69": {
+          "worldName": "Bahamut",
+          "pricePerUnit": 32.960430272762196,
+          "quantity": 10412,
+          "sum": 343184
+        },
+        "76": {
+          "worldName": "Tiamat",
+          "pricePerUnit": 35.9101252236136,
+          "quantity": 13975,
+          "sum": 501844
+        },
+        "92": {
+          "worldName": "Durandal",
+          "pricePerUnit": 29.247116968698517,
+          "quantity": 12140,
+          "sum": 355060
+        },
+        "98": {
+          "worldName": "Ridill",
+          "pricePerUnit": 41,
+          "quantity": 10420,
+          "sum": 427220
+        }
+      }
+    },
+    "3": {
+      "worlds": [
+        32,
+        92,
+        76,
+        69,
+        52,
+        59,
+        43,
+        31,
+        46,
+        51,
+        98
+      ],
+      "pricePerWorld": {
+        "31": {
+          "worldName": "Yojimbo",
+          "pricePerUnit": 41.14705882352941,
+          "quantity": 10200,
+          "sum": 419700
+        },
+        "32": {
+          "worldName": "Zeromus",
+          "pricePerUnit": 34.6,
+          "quantity": 10000,
+          "sum": 346000
+        },
+        "43": {
+          "worldName": "Alexander",
+          "pricePerUnit": 38.775193798449614,
+          "quantity": 10320,
+          "sum": 400160
+        },
+        "46": {
+          "worldName": "Fenrir",
+          "pricePerUnit": 41,
+          "quantity": 12798,
+          "sum": 524718
+        },
+        "51": {
+          "worldName": "Ultima",
+          "pricePerUnit": 41.5739954075775,
+          "quantity": 17420,
+          "sum": 724219
+        },
+        "52": {
+          "worldName": "Valefor",
+          "pricePerUnit": 39.43282748347454,
+          "quantity": 10741,
+          "sum": 423548
+        },
+        "59": {
+          "worldName": "Ifrit",
+          "pricePerUnit": 38.36764705882353,
+          "quantity": 12240,
+          "sum": 469620
+        },
+        "69": {
+          "worldName": "Bahamut",
+          "pricePerUnit": 37,
+          "quantity": 10820,
+          "sum": 400340
+        },
+        "76": {
+          "worldName": "Tiamat",
+          "pricePerUnit": 36.9,
+          "quantity": 10000,
+          "sum": 369000
+        },
+        "92": {
+          "worldName": "Durandal",
+          "pricePerUnit": 37.13961038961039,
+          "quantity": 12320,
+          "sum": 457560
+        },
+        "98": {
+          "worldName": "Ridill",
+          "pricePerUnit": 41.27272727272727,
+          "quantity": 11000,
+          "sum": 454000
+        }
+      }
+    },
+    "4": {
+      "worlds": [
+        92,
+        32,
+        31,
+        76,
+        69,
+        52,
+        59,
+        98,
+        51,
+        43,
+        46
+      ],
+      "pricePerWorld": {
+        "31": {
+          "worldName": "Yojimbo",
+          "pricePerUnit": 39.456296157801255,
+          "quantity": 10697,
+          "sum": 422064
+        },
+        "32": {
+          "worldName": "Zeromus",
+          "pricePerUnit": 27,
+          "quantity": 12360,
+          "sum": 333720
+        },
+        "43": {
+          "worldName": "Alexander",
+          "pricePerUnit": 45.102827763496144,
+          "quantity": 11281,
+          "sum": 508805
+        },
+        "46": {
+          "worldName": "Fenrir",
+          "pricePerUnit": 45.171821305841924,
+          "quantity": 11640,
+          "sum": 525800
+        },
+        "51": {
+          "worldName": "Ultima",
+          "pricePerUnit": 45.50048534265191,
+          "quantity": 10302,
+          "sum": 468746
+        },
+        "52": {
+          "worldName": "Valefor",
+          "pricePerUnit": 34,
+          "quantity": 16999,
+          "sum": 577966
+        },
+        "59": {
+          "worldName": "Ifrit",
+          "pricePerUnit": 34.298804780876495,
+          "quantity": 10040,
+          "sum": 344360
+        },
+        "69": {
+          "worldName": "Bahamut",
+          "pricePerUnit": 33,
+          "quantity": 10920,
+          "sum": 360360
+        },
+        "76": {
+          "worldName": "Tiamat",
+          "pricePerUnit": 31.96998977980117,
+          "quantity": 10763,
+          "sum": 344093
+        },
+        "92": {
+          "worldName": "Durandal",
+          "pricePerUnit": 27,
+          "quantity": 11822,
+          "sum": 319194
+        },
+        "98": {
+          "worldName": "Ridill",
+          "pricePerUnit": 40,
+          "quantity": 10240,
+          "sum": 409600
+        }
+      }
+    },
+    "5": {
+      "worlds": [
+        76,
+        52,
+        46,
+        32,
+        92,
+        43,
+        31,
+        59,
+        51,
+        98,
+        69
+      ],
+      "pricePerWorld": {
+        "31": {
+          "worldName": "Yojimbo",
+          "pricePerUnit": 35.99607072691552,
+          "quantity": 10180,
+          "sum": 366440
+        },
+        "32": {
+          "worldName": "Zeromus",
+          "pricePerUnit": 26.8364092456549,
+          "quantity": 11162,
+          "sum": 299548
+        },
+        "43": {
+          "worldName": "Alexander",
+          "pricePerUnit": 32,
+          "quantity": 10779,
+          "sum": 344928
+        },
+        "46": {
+          "worldName": "Fenrir",
+          "pricePerUnit": 28.86587805514482,
+          "quantity": 11497,
+          "sum": 331871
+        },
+        "51": {
+          "worldName": "Ultima",
+          "pricePerUnit": 39.706981317600786,
+          "quantity": 10170,
+          "sum": 403820
+        },
+        "52": {
+          "worldName": "Valefor",
+          "pricePerUnit": 19,
+          "quantity": 11520,
+          "sum": 218880
+        },
+        "59": {
+          "worldName": "Ifrit",
+          "pricePerUnit": 37.1533273827234,
+          "quantity": 10083,
+          "sum": 374617
+        },
+        "69": {
+          "worldName": "Bahamut",
+          "pricePerUnit": 41.44502617801047,
+          "quantity": 11460,
+          "sum": 474960
+        },
+        "76": {
+          "worldName": "Tiamat",
+          "pricePerUnit": 16,
+          "quantity": 10920,
+          "sum": 174720
+        },
+        "92": {
+          "worldName": "Durandal",
+          "pricePerUnit": 31.514050525120634,
+          "quantity": 10569,
+          "sum": 333072
+        },
+        "98": {
+          "worldName": "Ridill",
+          "pricePerUnit": 37,
+          "quantity": 14406,
+          "sum": 533022
+        }
+      }
+    },
+    "6": {
+      "worlds": [
+        46,
+        32,
+        92,
+        43,
+        52,
+        59,
+        69,
+        76,
+        31,
+        51,
+        98
+      ],
+      "pricePerWorld": {
+        "31": {
+          "worldName": "Yojimbo",
+          "pricePerUnit": 37.35450516986706,
+          "quantity": 10155,
+          "sum": 379335
+        },
+        "32": {
+          "worldName": "Zeromus",
+          "pricePerUnit": 29.51937984496124,
+          "quantity": 10320,
+          "sum": 304640
+        },
+        "43": {
+          "worldName": "Alexander",
+          "pricePerUnit": 32.406661502711074,
+          "quantity": 10328,
+          "sum": 334696
+        },
+        "46": {
+          "worldName": "Fenrir",
+          "pricePerUnit": 32.48778544875199,
+          "quantity": 15064,
+          "sum": 489396
+        },
+        "51": {
+          "worldName": "Ultima",
+          "pricePerUnit": 41.90395697272378,
+          "quantity": 10412,
+          "sum": 436304
+        },
+        "52": {
+          "worldName": "Valefor",
+          "pricePerUnit": 34,
+          "quantity": 10920,
+          "sum": 371280
+        },
+        "59": {
+          "worldName": "Ifrit",
+          "pricePerUnit": 40.96511627906977,
+          "quantity": 10320,
+          "sum": 422760
+        },
+        "69": {
+          "worldName": "Bahamut",
+          "pricePerUnit": 39,
+          "quantity": 14000,
+          "sum": 546000
+        },
+        "76": {
+          "worldName": "Tiamat",
+          "pricePerUnit": 36.84076433121019,
+          "quantity": 12560,
+          "sum": 462720
+        },
+        "92": {
+          "worldName": "Durandal",
+          "pricePerUnit": 31.96835242736882,
+          "quantity": 15799,
+          "sum": 505068
+        },
+        "98": {
+          "worldName": "Ridill",
+          "pricePerUnit": 43.12781954887218,
+          "quantity": 10640,
+          "sum": 458880
+        }
+      }
+    },
+    "7": {
+      "worlds": [
+        32,
+        52,
+        69,
+        92,
+        31,
+        59,
+        98,
+        76,
+        51,
+        43,
+        46
+      ],
+      "pricePerWorld": {
+        "31": {
+          "worldName": "Yojimbo",
+          "pricePerUnit": 40.66355140186916,
+          "quantity": 10700,
+          "sum": 435100
+        },
+        "32": {
+          "worldName": "Zeromus",
+          "pricePerUnit": 26.981265054866626,
+          "quantity": 11209,
+          "sum": 302433
+        },
+        "43": {
+          "worldName": "Alexander",
+          "pricePerUnit": 46.84013197360528,
+          "quantity": 10002,
+          "sum": 468495
+        },
+        "46": {
+          "worldName": "Fenrir",
+          "pricePerUnit": 76.4,
+          "quantity": 10000,
+          "sum": 764000
+        },
+        "51": {
+          "worldName": "Ultima",
+          "pricePerUnit": 46.32411067193676,
+          "quantity": 10120,
+          "sum": 468800
+        },
+        "52": {
+          "worldName": "Valefor",
+          "pricePerUnit": 31,
+          "quantity": 10920,
+          "sum": 338520
+        },
+        "59": {
+          "worldName": "Ifrit",
+          "pricePerUnit": 41.16279069767442,
+          "quantity": 10320,
+          "sum": 424800
+        },
+        "69": {
+          "worldName": "Bahamut",
+          "pricePerUnit": 35,
+          "quantity": 10253,
+          "sum": 358855
+        },
+        "76": {
+          "worldName": "Tiamat",
+          "pricePerUnit": 41.94949494949495,
+          "quantity": 11880,
+          "sum": 498360
+        },
+        "92": {
+          "worldName": "Durandal",
+          "pricePerUnit": 38.38200339558574,
+          "quantity": 11780,
+          "sum": 452140
+        },
+        "98": {
+          "worldName": "Ridill",
+          "pricePerUnit": 41,
+          "quantity": 10320,
+          "sum": 423120
+        }
+      }
+    },
+    "8": {
+      "worlds": [
+        51,
+        43,
+        92,
+        59,
+        76,
+        98,
+        32,
+        31,
+        69,
+        46,
+        52
+      ],
+      "pricePerWorld": {
+        "31": {
+          "worldName": "Yojimbo",
+          "pricePerUnit": 35.529411764705884,
+          "quantity": 17000,
+          "sum": 604000
+        },
+        "32": {
+          "worldName": "Zeromus",
+          "pricePerUnit": 35,
+          "quantity": 12078,
+          "sum": 422730
+        },
+        "43": {
+          "worldName": "Alexander",
+          "pricePerUnit": 30,
+          "quantity": 13159,
+          "sum": 394770
+        },
+        "46": {
+          "worldName": "Fenrir",
+          "pricePerUnit": 38.91566603468858,
+          "quantity": 14241,
+          "sum": 554198
+        },
+        "51": {
+          "worldName": "Ultima",
+          "pricePerUnit": 31.53767515012868,
+          "quantity": 13988,
+          "sum": 441149
+        },
+        "52": {
+          "worldName": "Valefor",
+          "pricePerUnit": 39,
+          "quantity": 11479,
+          "sum": 447681
+        },
+        "59": {
+          "worldName": "Ifrit",
+          "pricePerUnit": 33,
+          "quantity": 11840,
+          "sum": 390720
+        },
+        "69": {
+          "worldName": "Bahamut",
+          "pricePerUnit": 36.90566927648335,
+          "quantity": 10601,
+          "sum": 391237
+        },
+        "76": {
+          "worldName": "Tiamat",
+          "pricePerUnit": 33.80912695201877,
+          "quantity": 12359,
+          "sum": 417847
+        },
+        "92": {
+          "worldName": "Durandal",
+          "pricePerUnit": 32.83726606997559,
+          "quantity": 12290,
+          "sum": 403570
+        },
+        "98": {
+          "worldName": "Ridill",
+          "pricePerUnit": 34,
+          "quantity": 9999,
+          "sum": 339966
+        }
+      }
+    },
+    "9": {
+      "worlds": [
+        59,
+        31,
+        69,
+        76,
+        98,
+        92,
+        43,
+        46,
+        32,
+        51,
+        52
+      ],
+      "pricePerWorld": {
+        "31": {
+          "worldName": "Yojimbo",
+          "pricePerUnit": 28.232612235403582,
+          "quantity": 12897,
+          "sum": 364116
+        },
+        "32": {
+          "worldName": "Zeromus",
+          "pricePerUnit": 34.44893460690669,
+          "quantity": 12249,
+          "sum": 421965
+        },
+        "43": {
+          "worldName": "Alexander",
+          "pricePerUnit": 30,
+          "quantity": 10320,
+          "sum": 309600
+        },
+        "46": {
+          "worldName": "Fenrir",
+          "pricePerUnit": 31.564054831612793,
+          "quantity": 17727,
+          "sum": 559536
+        },
+        "51": {
+          "worldName": "Ultima",
+          "pricePerUnit": 40,
+          "quantity": 10640,
+          "sum": 425600
+        },
+        "52": {
+          "worldName": "Valefor",
+          "pricePerUnit": 41.32948929159802,
+          "quantity": 12140,
+          "sum": 501740
+        },
+        "59": {
+          "worldName": "Ifrit",
+          "pricePerUnit": 25.341614906832298,
+          "quantity": 16100,
+          "sum": 408000
+        },
+        "69": {
+          "worldName": "Bahamut",
+          "pricePerUnit": 29.208333333333332,
+          "quantity": 12000,
+          "sum": 350500
+        },
+        "76": {
+          "worldName": "Tiamat",
+          "pricePerUnit": 30.064874342489773,
+          "quantity": 15399,
+          "sum": 462969
+        },
+        "92": {
+          "worldName": "Durandal",
+          "pricePerUnit": 28,
+          "quantity": 14158,
+          "sum": 396424
+        },
+        "98": {
+          "worldName": "Ridill",
+          "pricePerUnit": 27.952380952380953,
+          "quantity": 12600,
+          "sum": 352200
+        }
+      }
+    },
+    "10": {
+      "worlds": [
+        52,
+        43,
+        32,
+        69,
+        92,
+        98,
+        59,
+        51,
+        46,
+        76,
+        31
+      ],
+      "pricePerWorld": {
+        "31": {
+          "worldName": "Yojimbo",
+          "pricePerUnit": 45,
+          "quantity": 10194,
+          "sum": 458730
+        },
+        "32": {
+          "worldName": "Zeromus",
+          "pricePerUnit": 32,
+          "quantity": 14877,
+          "sum": 476064
+        },
+        "43": {
+          "worldName": "Alexander",
+          "pricePerUnit": 29,
+          "quantity": 13968,
+          "sum": 405072
+        },
+        "46": {
+          "worldName": "Fenrir",
+          "pricePerUnit": 41.72358900144718,
+          "quantity": 13820,
+          "sum": 576620
+        },
+        "51": {
+          "worldName": "Ultima",
+          "pricePerUnit": 41.34394904458599,
+          "quantity": 12560,
+          "sum": 519280
+        },
+        "52": {
+          "worldName": "Valefor",
+          "pricePerUnit": 27,
+          "quantity": 11314,
+          "sum": 305478
+        },
+        "59": {
+          "worldName": "Ifrit",
+          "pricePerUnit": 37,
+          "quantity": 13889,
+          "sum": 513893
+        },
+        "69": {
+          "worldName": "Bahamut",
+          "pricePerUnit": 35,
+          "quantity": 9999,
+          "sum": 349965
+        },
+        "76": {
+          "worldName": "Tiamat",
+          "pricePerUnit": 42,
+          "quantity": 10040,
+          "sum": 421680
+        },
+        "92": {
+          "worldName": "Durandal",
+          "pricePerUnit": 35,
+          "quantity": 10470,
+          "sum": 366450
+        },
+        "98": {
+          "worldName": "Ridill",
+          "pricePerUnit": 35,
+          "quantity": 13382,
+          "sum": 468370
+        }
+      }
+    },
+    "11": {
+      "worlds": [
+        59,
+        46,
+        92,
+        98,
+        76,
+        52,
+        69,
+        32,
+        43,
+        31,
+        51
+      ],
+      "pricePerWorld": {
+        "31": {
+          "worldName": "Yojimbo",
+          "pricePerUnit": 25.272975184074173,
+          "quantity": 11001,
+          "sum": 278028
+        },
+        "32": {
+          "worldName": "Zeromus",
+          "pricePerUnit": 19,
+          "quantity": 12235,
+          "sum": 232465
+        },
+        "43": {
+          "worldName": "Alexander",
+          "pricePerUnit": 19.814485473798534,
+          "quantity": 14732,
+          "sum": 291907
+        },
+        "46": {
+          "worldName": "Fenrir",
+          "pricePerUnit": 11.75693064622954,
+          "quantity": 10569,
+          "sum": 124259
+        },
+        "51": {
+          "worldName": "Ultima",
+          "pricePerUnit": 32,
+          "quantity": 9999,
+          "sum": 319968
+        },
+        "52": {
+          "worldName": "Valefor",
+          "pricePerUnit": 15,
+          "quantity": 11831,
+          "sum": 177465
+        },
+        "59": {
+          "worldName": "Ifrit",
+          "pricePerUnit": 10.66561358475664,
+          "quantity": 10129,
+          "sum": 108032
+        },
+        "69": {
+          "worldName": "Bahamut",
+          "pricePerUnit": 17.496557916791378,
+          "quantity": 10023,
+          "sum": 175368
+        },
+        "76": {
+          "worldName": "Tiamat",
+          "pricePerUnit": 14,
+          "quantity": 9999,
+          "sum": 139986
+        },
+        "92": {
+          "worldName": "Durandal",
+          "pricePerUnit": 11,
+          "quantity": 10000,
+          "sum": 110000
+        },
+        "98": {
+          "worldName": "Ridill",
+          "pricePerUnit": 13.808171877997314,
+          "quantity": 10426,
+          "sum": 143964
+        }
+      }
+    },
+    "12": {
+      "worlds": [
+        51,
+        31,
+        59,
+        92,
+        98,
+        76,
+        32,
+        46,
+        43,
+        52,
+        69
+      ],
+      "pricePerWorld": {
+        "31": {
+          "worldName": "Yojimbo",
+          "pricePerUnit": 10.388164493480442,
+          "quantity": 11964,
+          "sum": 124284
+        },
+        "32": {
+          "worldName": "Zeromus",
+          "pricePerUnit": 11.700479233226837,
+          "quantity": 10016,
+          "sum": 117192
+        },
+        "43": {
+          "worldName": "Alexander",
+          "pricePerUnit": 11,
+          "quantity": 17159,
+          "sum": 188749
+        },
+        "46": {
+          "worldName": "Fenrir",
+          "pricePerUnit": 11,
+          "quantity": 10940,
+          "sum": 120340
+        },
+        "51": {
+          "worldName": "Ultima",
+          "pricePerUnit": 11.185185185185185,
+          "quantity": 10125,
+          "sum": 113250
+        },
+        "52": {
+          "worldName": "Valefor",
+          "pricePerUnit": 15,
+          "quantity": 12456,
+          "sum": 186840
+        },
+        "59": {
+          "worldName": "Ifrit",
+          "pricePerUnit": 11,
+          "quantity": 11031,
+          "sum": 121341
+        },
+        "69": {
+          "worldName": "Bahamut",
+          "pricePerUnit": 20,
+          "quantity": 13609,
+          "sum": 272180
+        },
+        "76": {
+          "worldName": "Tiamat",
+          "pricePerUnit": 11,
+          "quantity": 11000,
+          "sum": 121000
+        },
+        "92": {
+          "worldName": "Durandal",
+          "pricePerUnit": 11,
+          "quantity": 10459,
+          "sum": 115049
+        },
+        "98": {
+          "worldName": "Ridill",
+          "pricePerUnit": 11,
+          "quantity": 10720,
+          "sum": 117920
+        }
+      }
+    },
+    "13": {
+      "worlds": [
+        92,
+        76,
+        59,
+        46,
+        32,
+        43,
+        51,
+        98,
+        52,
+        31,
+        69
+      ],
+      "pricePerWorld": {
+        "31": {
+          "worldName": "Yojimbo",
+          "pricePerUnit": 28.801999801999802,
+          "quantity": 10101,
+          "sum": 290929
+        },
+        "32": {
+          "worldName": "Zeromus",
+          "pricePerUnit": 24,
+          "quantity": 10799,
+          "sum": 259176
+        },
+        "43": {
+          "worldName": "Alexander",
+          "pricePerUnit": 26.447513812154696,
+          "quantity": 10860,
+          "sum": 287220
+        },
+        "46": {
+          "worldName": "Fenrir",
+          "pricePerUnit": 24.967752943183758,
+          "quantity": 11722,
+          "sum": 292672
+        },
+        "51": {
+          "worldName": "Ultima",
+          "pricePerUnit": 26.6,
+          "quantity": 10000,
+          "sum": 266000
+        },
+        "52": {
+          "worldName": "Valefor",
+          "pricePerUnit": 30.533527696793,
+          "quantity": 11319,
+          "sum": 345609
+        },
+        "59": {
+          "worldName": "Ifrit",
+          "pricePerUnit": 21,
+          "quantity": 12308,
+          "sum": 258468
+        },
+        "69": {
+          "worldName": "Bahamut",
+          "pricePerUnit": 30.952380952380953,
+          "quantity": 10500,
+          "sum": 325000
+        },
+        "76": {
+          "worldName": "Tiamat",
+          "pricePerUnit": 20.9096657633243,
+          "quantity": 11070,
+          "sum": 231470
+        },
+        "92": {
+          "worldName": "Durandal",
+          "pricePerUnit": 20.625,
+          "quantity": 10400,
+          "sum": 214500
+        },
+        "98": {
+          "worldName": "Ridill",
+          "pricePerUnit": 26,
+          "quantity": 10746,
+          "sum": 279396
+        }
+      }
+    },
+    "14": {
+      "worlds": [
+        52,
+        59,
+        31,
+        92,
+        43,
+        98,
+        51,
+        32,
+        76,
+        46,
+        69
+      ],
+      "pricePerWorld": {
+        "31": {
+          "worldName": "Yojimbo",
+          "pricePerUnit": 63,
+          "quantity": 10334,
+          "sum": 651042
+        },
+        "32": {
+          "worldName": "Zeromus",
+          "pricePerUnit": 74,
+          "quantity": 10521,
+          "sum": 778554
+        },
+        "43": {
+          "worldName": "Alexander",
+          "pricePerUnit": 68,
+          "quantity": 11062,
+          "sum": 752216
+        },
+        "46": {
+          "worldName": "Fenrir",
+          "pricePerUnit": 74,
+          "quantity": 10092,
+          "sum": 746808
+        },
+        "51": {
+          "worldName": "Ultima",
+          "pricePerUnit": 73.96579330422125,
+          "quantity": 10992,
+          "sum": 813032
+        },
+        "52": {
+          "worldName": "Valefor",
+          "pricePerUnit": 62,
+          "quantity": 11442,
+          "sum": 709404
+        },
+        "59": {
+          "worldName": "Ifrit",
+          "pricePerUnit": 62.916247906197654,
+          "quantity": 11940,
+          "sum": 751220
+        },
+        "69": {
+          "worldName": "Bahamut",
+          "pricePerUnit": 77,
+          "quantity": 10162,
+          "sum": 782474
+        },
+        "76": {
+          "worldName": "Tiamat",
+          "pricePerUnit": 124.27272727272727,
+          "quantity": 11000,
+          "sum": 1367000
+        },
+        "92": {
+          "worldName": "Durandal",
+          "pricePerUnit": 66.59596960687149,
+          "quantity": 12108,
+          "sum": 806344
+        },
+        "98": {
+          "worldName": "Ridill",
+          "pricePerUnit": 72.91501006036218,
+          "quantity": 12425,
+          "sum": 905969
+        }
+      }
+    },
+    "15": {
+      "worlds": [
+        59,
+        43,
+        46,
+        92,
+        98,
+        32,
+        31,
+        76,
+        52,
+        69,
+        51
+      ],
+      "pricePerWorld": {
+        "31": {
+          "worldName": "Yojimbo",
+          "pricePerUnit": 16.363636363636363,
+          "quantity": 11000,
+          "sum": 180000
+        },
+        "32": {
+          "worldName": "Zeromus",
+          "pricePerUnit": 15.376798720909575,
+          "quantity": 11258,
+          "sum": 173112
+        },
+        "43": {
+          "worldName": "Alexander",
+          "pricePerUnit": 11.583333333333334,
+          "quantity": 12000,
+          "sum": 139000
+        },
+        "46": {
+          "worldName": "Fenrir",
+          "pricePerUnit": 12.456329287213654,
+          "quantity": 10957,
+          "sum": 136484
+        },
+        "51": {
+          "worldName": "Ultima",
+          "pricePerUnit": 20.909099172802474,
+          "quantity": 11001,
+          "sum": 230021
+        },
+        "52": {
+          "worldName": "Valefor",
+          "pricePerUnit": 15,
+          "quantity": 10000,
+          "sum": 150000
+        },
+        "59": {
+          "worldName": "Ifrit",
+          "pricePerUnit": 14.839285714285714,
+          "quantity": 11200,
+          "sum": 166200
+        },
+        "69": {
+          "worldName": "Bahamut",
+          "pricePerUnit": 16.52173913043478,
+          "quantity": 11500,
+          "sum": 190000
+        },
+        "76": {
+          "worldName": "Tiamat",
+          "pricePerUnit": 15,
+          "quantity": 10000,
+          "sum": 150000
+        },
+        "92": {
+          "worldName": "Durandal",
+          "pricePerUnit": 14,
+          "quantity": 11000,
+          "sum": 154000
+        },
+        "98": {
+          "worldName": "Ridill",
+          "pricePerUnit": 14,
+          "quantity": 11000,
+          "sum": 154000
+        }
+      }
+    },
+    "16": {
+      "worlds": [
+        98,
+        76,
+        92,
+        31,
+        59,
+        46,
+        69,
+        51,
+        32,
+        52,
+        43
+      ],
+      "pricePerWorld": {
+        "31": {
+          "worldName": "Yojimbo",
+          "pricePerUnit": 16,
+          "quantity": 11853,
+          "sum": 189648
+        },
+        "32": {
+          "worldName": "Zeromus",
+          "pricePerUnit": 20,
+          "quantity": 13783,
+          "sum": 275660
+        },
+        "43": {
+          "worldName": "Alexander",
+          "pricePerUnit": 26,
+          "quantity": 12405,
+          "sum": 322530
+        },
+        "46": {
+          "worldName": "Fenrir",
+          "pricePerUnit": 17,
+          "quantity": 10655,
+          "sum": 181135
+        },
+        "51": {
+          "worldName": "Ultima",
+          "pricePerUnit": 17,
+          "quantity": 11226,
+          "sum": 190842
+        },
+        "52": {
+          "worldName": "Valefor",
+          "pricePerUnit": 24,
+          "quantity": 11908,
+          "sum": 285792
+        },
+        "59": {
+          "worldName": "Ifrit",
+          "pricePerUnit": 16.633800238029846,
+          "quantity": 10923,
+          "sum": 181691
+        },
+        "69": {
+          "worldName": "Bahamut",
+          "pricePerUnit": 17.883356419042066,
+          "quantity": 13717,
+          "sum": 245306
+        },
+        "76": {
+          "worldName": "Tiamat",
+          "pricePerUnit": 11,
+          "quantity": 11824,
+          "sum": 130064
+        },
+        "92": {
+          "worldName": "Durandal",
+          "pricePerUnit": 12,
+          "quantity": 12327,
+          "sum": 147924
+        },
+        "98": {
+          "worldName": "Ridill",
+          "pricePerUnit": 11,
+          "quantity": 11950,
+          "sum": 131450
+        }
+      }
+    },
+    "17": {
+      "worlds": [
+        69,
+        98,
+        92,
+        51,
+        76,
+        46,
+        52,
+        31,
+        43,
+        32,
+        59
+      ],
+      "pricePerWorld": {
+        "31": {
+          "worldName": "Yojimbo",
+          "pricePerUnit": 19,
+          "quantity": 10366,
+          "sum": 196954
+        },
+        "32": {
+          "worldName": "Zeromus",
+          "pricePerUnit": 21,
+          "quantity": 11749,
+          "sum": 246729
+        },
+        "43": {
+          "worldName": "Alexander",
+          "pricePerUnit": 27.373532356421226,
+          "quantity": 10987,
+          "sum": 300753
+        },
+        "46": {
+          "worldName": "Fenrir",
+          "pricePerUnit": 17.61295005807201,
+          "quantity": 10332,
+          "sum": 181977
+        },
+        "51": {
+          "worldName": "Ultima",
+          "pricePerUnit": 14,
+          "quantity": 10076,
+          "sum": 141064
+        },
+        "52": {
+          "worldName": "Valefor",
+          "pricePerUnit": 17,
+          "quantity": 11122,
+          "sum": 189074
+        },
+        "59": {
+          "worldName": "Ifrit",
+          "pricePerUnit": 27,
+          "quantity": 11017,
+          "sum": 297459
+        },
+        "69": {
+          "worldName": "Bahamut",
+          "pricePerUnit": 10.370267701568192,
+          "quantity": 12626,
+          "sum": 130935
+        },
+        "76": {
+          "worldName": "Tiamat",
+          "pricePerUnit": 14,
+          "quantity": 15256,
+          "sum": 213584
+        },
+        "92": {
+          "worldName": "Durandal",
+          "pricePerUnit": 13,
+          "quantity": 14665,
+          "sum": 190645
+        },
+        "98": {
+          "worldName": "Ridill",
+          "pricePerUnit": 16.685203520352037,
+          "quantity": 18180,
+          "sum": 303337
+        }
+      }
+    },
+    "18": {
+      "worlds": [
+        98,
+        76,
+        31,
+        46,
+        32,
+        59,
+        51,
+        43,
+        69,
+        52,
+        92
+      ],
+      "pricePerWorld": {
+        "31": {
+          "worldName": "Yojimbo",
+          "pricePerUnit": 51,
+          "quantity": 13335,
+          "sum": 680085
+        },
+        "32": {
+          "worldName": "Zeromus",
+          "pricePerUnit": 52.37291169451074,
+          "quantity": 13408,
+          "sum": 702216
+        },
+        "43": {
+          "worldName": "Alexander",
+          "pricePerUnit": 61,
+          "quantity": 10902,
+          "sum": 665022
+        },
+        "46": {
+          "worldName": "Fenrir",
+          "pricePerUnit": 52.83507874989692,
+          "quantity": 12127,
+          "sum": 640731
+        },
+        "51": {
+          "worldName": "Ultima",
+          "pricePerUnit": 53,
+          "quantity": 10361,
+          "sum": 549133
+        },
+        "52": {
+          "worldName": "Valefor",
+          "pricePerUnit": 63,
+          "quantity": 16593,
+          "sum": 1045359
+        },
+        "59": {
+          "worldName": "Ifrit",
+          "pricePerUnit": 53,
+          "quantity": 12571,
+          "sum": 666263
+        },
+        "69": {
+          "worldName": "Bahamut",
+          "pricePerUnit": 63.39507620164127,
+          "quantity": 10236,
+          "sum": 648912
+        },
+        "76": {
+          "worldName": "Tiamat",
+          "pricePerUnit": 51.79234654234654,
+          "quantity": 10296,
+          "sum": 533254
+        },
+        "92": {
+          "worldName": "Durandal",
+          "pricePerUnit": 71.853327048472,
+          "quantity": 12729,
+          "sum": 914621
+        },
+        "98": {
+          "worldName": "Ridill",
+          "pricePerUnit": 53.33321214324668,
+          "quantity": 11002,
+          "sum": 586772
+        }
+      }
+    },
+    "19": {
+      "worlds": [
+        43,
+        98,
+        76,
+        92,
+        31,
+        32,
+        59,
+        51,
+        46,
+        52,
+        69
+      ],
+      "pricePerWorld": {
+        "31": {
+          "worldName": "Yojimbo",
+          "pricePerUnit": 45,
+          "quantity": 19972,
+          "sum": 898740
+        },
+        "32": {
+          "worldName": "Zeromus",
+          "pricePerUnit": 47,
+          "quantity": 9999,
+          "sum": 469953
+        },
+        "43": {
+          "worldName": "Alexander",
+          "pricePerUnit": 42,
+          "quantity": 14998,
+          "sum": 629916
+        },
+        "46": {
+          "worldName": "Fenrir",
+          "pricePerUnit": 51.619011334412804,
+          "quantity": 10499,
+          "sum": 541948
+        },
+        "51": {
+          "worldName": "Ultima",
+          "pricePerUnit": 48,
+          "quantity": 9999,
+          "sum": 479952
+        },
+        "52": {
+          "worldName": "Valefor",
+          "pricePerUnit": 52,
+          "quantity": 9999,
+          "sum": 519948
+        },
+        "59": {
+          "worldName": "Ifrit",
+          "pricePerUnit": 49.81816528775343,
+          "quantity": 10999,
+          "sum": 547950
+        },
+        "69": {
+          "worldName": "Bahamut",
+          "pricePerUnit": 57,
+          "quantity": 13000,
+          "sum": 741000
+        },
+        "76": {
+          "worldName": "Tiamat",
+          "pricePerUnit": 44,
+          "quantity": 9999,
+          "sum": 439956
+        },
+        "92": {
+          "worldName": "Durandal",
+          "pricePerUnit": 44,
+          "quantity": 9999,
+          "sum": 439956
+        },
+        "98": {
+          "worldName": "Ridill",
+          "pricePerUnit": 44.66664444296286,
+          "quantity": 14999,
+          "sum": 669955
+        }
+      }
+    }
+  }
 }
