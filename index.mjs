@@ -82,6 +82,7 @@ async function startSearch() {
     }
 
     for (const index in marketableItemsId) {
+        await new Promise(s => setTimeout(s, 100))
         await searchItem(marketableItemsId[index]);
     }
 
@@ -127,7 +128,9 @@ function isNearlyTime(a, b) {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 async function searchItem(itemId) {
-    console.log("Searching:" + itemId);
+    if (Number(itemId) % 100 == 0) {
+        console.log("Searching:" + itemId);
+    }
     db.data.searchedItemId = itemId;
 
     const recentHistories = await got('https://universalis.app/api/v2/history/' + 'Alexander' + '/' + itemId, {
