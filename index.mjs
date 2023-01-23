@@ -82,7 +82,6 @@ async function startSearch() {
     }
 
     for (const index in marketableItemsId) {
-        await new Promise(s => setTimeout(s, 100))
         await searchItem(marketableItemsId[index]);
     }
 
@@ -97,7 +96,7 @@ async function startSearch() {
 
     console.log("Loop Over");
 
-    await searchCrystal();
+    //await searchCrystal();
 }
 
 function now() {
