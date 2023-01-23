@@ -74,8 +74,8 @@ async function startSearch() {
 
     let leastRecentlyUpdatedItems = await got('https://universalis.app/api/v2/extra/stats/least-recently-updated?dcName=Alexander&entries=200').json();
 
-    for (const index in leastRecentlyUpdatedItems) {
-        await searchItem(marketableItemsId[index].itemID);
+    for (const index in leastRecentlyUpdatedItems.items) {
+        await searchItem(leastRecentlyUpdatedItems.items[index].itemID);
     }
 
     db.data.searchedResult = db.data.searchingResult;
