@@ -72,10 +72,31 @@ async function startSearch() {
 
     db.data = db.data || { searchedTime: null, searchedItemId: -1, searchedResult: [], searchingResult: [] };
 
-    let leastRecentlyUpdatedItems = await got('https://universalis.app/api/v2/extra/stats/least-recently-updated?world=alexander&entries=200').json();
+    let marketableItemsId = await got('https://universalis.app/api/marketable').json();
 
-    for (const index in leastRecentlyUpdatedItems.items) {
-        await searchItem(leastRecentlyUpdatedItems.items[index].itemID);
+    let row = 0;
+    let column = 0;
+    let idsArray = [""];
+
+    for (const index in marketableItemsId) {
+        idsArray[row] = idsArray[row] + "," + marketableItemsId[index];
+        column++;
+        if (column == 99) {
+            column = 0;
+            row++;
+            idsArray[row] = "";
+        }
+    }
+
+    for (const index in idsArray) {
+        if (idsArray[index] == db.data.searchedItemId && index != idsArray.length) {
+            idsArray = idsArray.slice(index);
+            break;
+        }
+    }
+
+    for (const index in idsArray) {
+        await searchItems(idsArray[index]);
     }
 
     db.data.searchedResult = db.data.searchingResult;
@@ -119,16 +140,36 @@ function isNearlyTime(a, b) {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-async function searchItem(itemId) {
-    console.log("Searching:" + itemId);
-    db.data.searchedItemId = itemId;
+async function searchItems(itemIds) {
+    await new Promise(s => setTimeout(s, 1000));
 
-    const recentHistories = await got('https://universalis.app/api/v2/history/' + 'Alexander' + '/' + itemId, {
+    console.log("Searching:" + itemIds);
+    db.data.searchedItemId = itemIds;
+
+    const recentHistories = await got('https://universalis.app/api/v2/history/' + 'Alexander' + '/' + itemIds, {
         searchParams: {
             entriesToReturn: 50
+        },
+        retry: {
+            limit: 10,
+            statusCodes: [429, 504]
         }
     }).json();
 
+
+    for (const index in recentHistories.itemIDs) {
+        let id = recentHistories.itemIDs[index];
+        let histories = recentHistories.items[id];
+
+        if (histories != undefined) {
+            saveItem(id, histories)
+        }
+    }
+
+
+}
+
+async function saveItem(itemId, recentHistories) {
     let salesIn24h = recentHistories.entries.filter(history => history.timestamp > before24h);
 
     let onlyHq = false;
@@ -179,10 +220,15 @@ async function searchJpName(itemId) {
 };
 
 async function searchCheapestPrice(itemId, onlyHq) {
+    await new Promise(s => setTimeout(s, 1000));
     const itemResponse = await got('https://universalis.app/api/v2/' + 'Gaia' + '/' + itemId, {
         searchParams: {
             listings: onlyHq ? 999 : 1,
             entries: 0
+        },
+        retry: {
+            limit: 10,
+            statusCodes: [429, 504]
         }
     }).json();
     const bordInfo = onlyHq ? itemResponse.listings.filter(list => list.hq == true)[0] : itemResponse.listings[0];
