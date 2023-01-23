@@ -72,17 +72,10 @@ async function startSearch() {
 
     db.data = db.data || { searchedTime: null, searchedItemId: -1, searchedResult: [], searchingResult: [] };
 
-    let marketableItemsId = await got('https://universalis.app/api/marketable').json();
+    let leastRecentlyUpdatedItems = await got('https://universalis.app/api/v2/extra/stats/least-recently-updated?dcName=Alexander&entries=200').json();
 
-    for (const index in marketableItemsId) {
-        if (marketableItemsId[index] == db.data.searchedItemId && index != marketableItemsId.length) {
-            marketableItemsId = marketableItemsId.slice(index);
-            break;
-        }
-    }
-
-    for (const index in marketableItemsId) {
-        await searchItem(marketableItemsId[index]);
+    for (const index in leastRecentlyUpdatedItems) {
+        await searchItem(marketableItemsId[index].itemID);
     }
 
     db.data.searchedResult = db.data.searchingResult;
