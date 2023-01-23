@@ -72,7 +72,7 @@ async function startSearch() {
 
     db.data = db.data || { searchedTime: null, searchedItemId: -1, searchedResult: [], searchingResult: [] };
 
-    let leastRecentlyUpdatedItems = await got('https://universalis.app/api/v2/extra/stats/least-recently-updated?dcName=Alexander&entries=200').json();
+    let leastRecentlyUpdatedItems = await got('https://universalis.app/api/v2/extra/stats/least-recently-updated?world=alexander&entries=200').json();
 
     for (const index in leastRecentlyUpdatedItems.items) {
         await searchItem(leastRecentlyUpdatedItems.items[index].itemID);
