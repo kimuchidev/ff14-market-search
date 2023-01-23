@@ -120,9 +120,7 @@ function isNearlyTime(a, b) {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 async function searchItem(itemId) {
-    if (Number(itemId) % 100 == 0) {
-        console.log("Searching:" + itemId);
-    }
+    console.log("Searching:" + itemId);
     db.data.searchedItemId = itemId;
 
     const recentHistories = await got('https://universalis.app/api/v2/history/' + 'Alexander' + '/' + itemId, {
